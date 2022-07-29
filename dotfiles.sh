@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 files=(
-    ".bashrc"
+    # ".bashrc" -- removing this because I don't use Ruby
     ".bash_profile"
     ".vimrc"
     ".gitconfig"

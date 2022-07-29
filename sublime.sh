@@ -7,17 +7,17 @@ else
   echo "Package control for Sublime has already been installed."
 fi
 
-sublime_things_to_do=(
-  "Pretty JSON"
-  "Dockerfile Syntax Highlighting"
-  "RawLineEdit"
-  "MarkdownPreview"
-  "SublimeLinter"
-  "SublimeLinter-json"
-  "SublimeLinter-flake8"
-  )
-echo "Things to install for Sublime through Package Control:"
-for i in "${sublime_things_to_do[@]}"
-do
-  echo $i
-done
+# sublime_things_to_do=(
+#   "Pretty JSON"
+#   "Dockerfile Syntax Highlighting"
+#   "RawLineEdit"
+#   "MarkdownPreview"
+#   "SublimeLinter"
+#   "SublimeLinter-json"
+#   "SublimeLinter-flake8"
+#   )
+# echo "Things to install for Sublime through Package Control:"
+# for i in "${sublime_things_to_do[@]}"
+# do
+#   echo $i
+# done

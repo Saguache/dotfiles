@@ -49,14 +49,14 @@ casks=(
   iterm2
   sublime-text
   font-inconsolata-nerd-font
-  intellij-idea-ce
+  #intellij-idea-ce
   #dropbox
-  r
-  rstudio
+  #r
+  #rstudio
   docker
-  slack
-  google-chrome
-  session-manager-plugin #https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
+  #slack
+  #google-chrome
+  #session-manager-plugin #https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
   )
 for cask in "${casks[@]}"
 do
@@ -71,9 +71,9 @@ done
 
 installed_formulae=( $(brew list --formula -1) )
 formulae=(
-  scala
-  openjdk@11
-  apache-spark
+  #scala
+  #openjdk@11
+  #apache-spark
   #sbt #only works on x86_64 atm 2021-05-20
   tree
   wget
@@ -81,9 +81,9 @@ formulae=(
   bash-completion
   pyenv
   jq
-  parquet-tools
+  #parquet-tools
   awscli
-  graphviz
+  #graphviz
   )
 for formula in "${formulae[@]}"
 do
@@ -106,7 +106,7 @@ curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
 bash python-setup.sh
 
 # Setup Spark
-bash spark.sh
+# bash spark.sh
 
 # Setup dotfiles
 ./dotfiles.sh

@@ -57,17 +57,17 @@ export SPARK_HOME="/opt/homebrew/Cellar/apache-spark/libexec"
 export PATH="$SPARK_HOME/bin/:$PATH"
 
 ## K8S aliases and functions
-if [[ -f "${PWD}/.k8s" ]]; then
-  source "${PWD}/.k8s"
-fi
+# if [[ -f "${PWD}/.k8s" ]]; then
+#  source "${PWD}/.k8s"
+# fi
 
 ## TOKENS
-if [[ -f "${HOME}/Dropbox/Code/tokens/homebrew" ]]; then
-	export HOMEBREW_GITHUB_API_TOKEN="$(cat ${HOME}/Dropbox/Code/tokens/homebrew)"
-fi
-if [[ -f "${HOME}/Dropbox/Code/tokens/ghcr" ]]; then
-  export GHCR_TOKEN="$(cat ${HOME}/Dropbox/Code/tokens/ghcr)"
-fi
+# if [[ -f "${HOME}/Dropbox/Code/tokens/homebrew" ]]; then
+# 	export HOMEBREW_GITHUB_API_TOKEN="$(cat ${HOME}/Dropbox/Code/tokens/homebrew)"
+# fi
+# if [[ -f "${HOME}/Dropbox/Code/tokens/ghcr" ]]; then
+#  export GHCR_TOKEN="$(cat ${HOME}/Dropbox/Code/tokens/ghcr)"
+# fi
 
 # Validate a Cloudformation template
 validateTemplate() {
